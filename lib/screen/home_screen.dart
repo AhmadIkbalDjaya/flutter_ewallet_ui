@@ -45,10 +45,10 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     ),
                   ),
-                  Expanded(
+                  const Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children: const [
+                      children: [
                         Text(
                           "Hallo,",
                           style: TextStyle(
@@ -71,8 +71,8 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                   IconButton(
                     onPressed: () {},
-                    icon: Stack(
-                      children: const [
+                    icon: const Stack(
+                      children: [
                         Icon(
                           Icons.notifications_none_rounded,
                           size: 30,
@@ -96,8 +96,8 @@ class _HomeScreenState extends State<HomeScreen> {
             Container(
               padding: const EdgeInsets.only(top: 30),
               // alignment: Alignment.center,
-              child: Column(
-                children: const [
+              child: const Column(
+                children: [
                   Text(
                     "Saldo",
                     style: TextStyle(
@@ -122,9 +122,9 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             Container(
               margin: const EdgeInsets.only(top: 30),
-              child: Row(
+              child: const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: const [
+                children: [
                   MenuWidget(
                     icon: Icons.send_rounded,
                     text: "Kirim",
